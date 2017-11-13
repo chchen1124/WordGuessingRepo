@@ -1,0 +1,48 @@
+body{
+	background: url("C:/UCSDExtension/10-27/August_2017_Cohort.jpg");
+}
+h1{
+	border: none;
+	text-align: center;
+	width: 265px;
+	height: 160px;
+	background-color: #45009A;
+	margin-left: 525px;
+	padding: 8px;
+	color:lime;
+	font-weight: bold;
+}
+#par1 p{
+	color:red;
+	margin-left: 445px;
+}
+.message{
+	height: 270px;
+	width: 270px;
+	background-color: yellow;
+	color:blue;
+	margin-left: 520px;
+}
+
+#won{
+	height: 125px;
+	width:125px;
+	background-color: teal;
+	margin-left: 520px;
+}
+#loss{
+	height: 125px;
+	width: 125px;
+	background-color: #AF3901;
+	margin-left: 520px;
+}
+
+section{
+	margin-left: 450px;
+	margin-bottom: 15px;
+}
+
+.respimg1,.respimg2,.respimg3{
+	width:85px;
+	height: 85px;
+}
