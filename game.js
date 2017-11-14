@@ -5,6 +5,8 @@ var losses=0;
 
 //computer gets a random word from the words array
 var random_word=words[Math.floor(Math.random()*words.length)];
+//random word is put in the message2 box
+$(".message2").html(random_word);
 //the words in the array are assigned to the images of the students 
 var i1=words[Math.floor(Math.random()*words.length)];
 var i2=words[Math.floor(Math.random()*words.length)];
@@ -51,6 +53,8 @@ $(document).ready(function(){
 		}
 		//have the computer choose another word randomly from the array
 		random_word=words[Math.floor(Math.random()*words.length)];
+		//put the random word in the message2 box
+		$(".message2").html(random_word);
 		//assign the words to the images again
 		i1=words[Math.floor(Math.random()*words.length)];
 		i2=words[Math.floor(Math.random()*words.length)];
@@ -92,6 +96,7 @@ $(document).ready(function(){
 			$("#loss").html("Losses: "+losses);
 		}
 		random_word=words[Math.floor(Math.random()*words.length)];
+		$(".message2").html(random_word);
 		i1=words[Math.floor(Math.random()*words.length)];
 		i2=words[Math.floor(Math.random()*words.length)];
 		i3=words[Math.floor(Math.random()*words.length)];
@@ -132,6 +137,7 @@ $(document).ready(function(){
 			$("#loss").html("Losses: "+losses);
 		}
 		random_word=words[Math.floor(Math.random()*words.length)];
+		$(".message2").html(random_word);
 		i1=words[Math.floor(Math.random()*words.length)];
 		i2=words[Math.floor(Math.random()*words.length)];
 		i3=words[Math.floor(Math.random()*words.length)];
@@ -172,6 +178,7 @@ $(document).ready(function(){
 			$("#loss").html("Losses: "+losses);
 		}
 		random_word=words[Math.floor(Math.random()*words.length)];
+		$(".message2").html(random_word);
 		i1=words[Math.floor(Math.random()*words.length)];
 		i2=words[Math.floor(Math.random()*words.length)];
 		i3=words[Math.floor(Math.random()*words.length)];
@@ -213,6 +220,7 @@ $(document).ready(function(){
 			$("#loss").html("Losses: "+losses);
 		}
 		random_word=words[Math.floor(Math.random()*words.length)];
+		$(".message2").html(random_word);
 		i1=words[Math.floor(Math.random()*words.length)];
 		i2=words[Math.floor(Math.random()*words.length)];
 		i3=words[Math.floor(Math.random()*words.length)];
@@ -253,6 +261,7 @@ $(document).ready(function(){
 			$("#loss").html("Losses: "+losses);
 		}
 		random_word=words[Math.floor(Math.random()*words.length)];
+		$(".message2").html(random_word);
 		i1=words[Math.floor(Math.random()*words.length)];
 		i2=words[Math.floor(Math.random()*words.length)];
 		i3=words[Math.floor(Math.random()*words.length)];
@@ -293,6 +302,7 @@ $(document).ready(function(){
 			$("#loss").html("Losses: "+losses);
 		}
 		random_word=words[Math.floor(Math.random()*words.length)];
+		$(".message2").html(random_word);
 		i1=words[Math.floor(Math.random()*words.length)];
 		i2=words[Math.floor(Math.random()*words.length)];
 		i3=words[Math.floor(Math.random()*words.length)];
@@ -333,6 +343,7 @@ $(document).ready(function(){
 			$("#loss").html("Losses: "+losses);
 		}
 		random_word=words[Math.floor(Math.random()*words.length)];
+		$(".message2").html(random_word);
 		i1=words[Math.floor(Math.random()*words.length)];
 		i2=words[Math.floor(Math.random()*words.length)];
 		i3=words[Math.floor(Math.random()*words.length)];
@@ -373,6 +384,7 @@ $(document).ready(function(){
 			$("#loss").html("Losses: "+losses);
 		}
 		random_word=words[Math.floor(Math.random()*words.length)];
+		$(".message2").html(random_word);
 		i1=words[Math.floor(Math.random()*words.length)];
 		i2=words[Math.floor(Math.random()*words.length)];
 		i3=words[Math.floor(Math.random()*words.length)];
@@ -413,6 +425,7 @@ $(document).ready(function(){
 			$("#loss").html("Losses: "+losses);
 		}
 		random_word=words[Math.floor(Math.random()*words.length)];
+		$(".message2").html(random_word);
 		i1=words[Math.floor(Math.random()*words.length)];
 		i2=words[Math.floor(Math.random()*words.length)];
 		i3=words[Math.floor(Math.random()*words.length)];
@@ -453,6 +466,7 @@ $(document).ready(function(){
 			$("#loss").html("Losses: "+losses);
 		}
 		random_word=words[Math.floor(Math.random()*words.length)];
+		$(".message2").html(random_word);
 		i1=words[Math.floor(Math.random()*words.length)];
 		i2=words[Math.floor(Math.random()*words.length)];
 		i3=words[Math.floor(Math.random()*words.length)];
@@ -493,6 +507,7 @@ $(document).ready(function(){
 			$("#loss").html("Losses: "+losses);
 		}
 		random_word=words[Math.floor(Math.random()*words.length)];
+		$(".message2").html(random_word);
 		i1=words[Math.floor(Math.random()*words.length)];
 		i2=words[Math.floor(Math.random()*words.length)];
 		i3=words[Math.floor(Math.random()*words.length)];
@@ -518,6 +533,10 @@ $(document).ready(function(){
 		$("#klayton").val(i11);
 		$("#mike").val(i12);				
 	});
+
+	//display the random word the computer chose
+	var rword=random_word;
+	document.querySelector(".message2").innerHTML=rword;
 
 	//display the wins
 	var win_html="<p>Wins: "+wins+"</p>";
